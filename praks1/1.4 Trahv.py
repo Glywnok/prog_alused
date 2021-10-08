@@ -1,0 +1,10 @@
+Nimi = input("Palun sisestage oma nimet: ")
+Nimi = str(Nimi)
+Lubatud = input("Sisestage lubatud kiirus: ")
+Lubatud = int(Lubatud)
+Kiirus = input("Sisestage teie kiirus: ")
+Kiirus = int(Kiirus)
+MAX_INT = 180
+Trahv = ((int(Kiirus)) - int(Lubatud)) * 3
+Trahv = int(Trahv)
+print = ( Nimi ("kiirus ületamise eest on teie trahv ") %Trahv (" eurot."))
