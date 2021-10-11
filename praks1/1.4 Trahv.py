@@ -6,5 +6,5 @@ Kiirus = input("Sisestage teie kiirus: ")
 Kiirus = int(Kiirus)
 MAX_INT = 180
 Trahv = ((int(Kiirus)) - int(Lubatud)) * 3
-Trahv = int(Trahv)
-print = ( Nimi ("kiirus ületamise eest on teie trahv ") %Trahv (" eurot."))
+Trahv = str(Trahv)
+print( Nimi + ", kiiruse ületamise eest on teie trahv " + Trahv + " eurot.")
