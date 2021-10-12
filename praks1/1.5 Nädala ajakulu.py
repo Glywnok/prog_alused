@@ -6,7 +6,10 @@
 
 x = input("sisestage ainepunkt arv ")
 x = int(x)
+
 y = input("sisestage nädalate arv ")
 y = int(y)
+
 z = (x * 26 / y)
+
 print(round(z))
