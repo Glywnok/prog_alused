@@ -1,9 +1,9 @@
-a = input("Sisestage astme alus: ")
-a = int(a)
+alus = input("Sisestage astme alus: ")
+alus = int(alus)
 
-b = input("Sisestage astendaja: ")
-b = int(b)
+asten = input("Sisestage astendaja: ")
+asten = int(asten)
 
-c = ( a ** b )
+vastus = ( alus ** asten )
 
-print(c)
+print(vastus)
