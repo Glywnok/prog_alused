@@ -56,7 +56,19 @@ tahvel.create_rectangle(100,700,200,800, fill="black", outline="black")
 tahvel.create_rectangle(300,700,400,800, fill="black", outline="black")
 tahvel.create_rectangle(500,700,600,800, fill="black", outline="black")
 
+'''
+i = 1
+while i <= 8:
+    line = 1
+    if line % 2 == 0:
+        kord = 1
+        if kord % 2 == 0:
+            time = 0
+            tahvel.create_rectangle(0 + time * 100 , 0 + time * 100, 100 * time, 100 * time, fill = "black", outline="black")
+            kord = kord + 1
+            time = time + 2
 
+'''
 #Malenuppud
 tahvel.create_oval(125,125,175,175, fill="black", outline="white")
 tahvel.create_oval(75,75,25,25, fill="white", outline="black")
