@@ -12,7 +12,7 @@ else:
     print("Sisestatud number ei nõusta proovi uuesti.")
     exit()
 
-print(str(failinimi))
+#print(str(failinimi))
 
 fail = open(failinimi, encoding="UTF-8")
 
@@ -24,4 +24,7 @@ for rida in fail:
 
 fail.close()
 
-print(muusika)
+#print(muusika)
+
+for pala in muusika:
+    print(pala)
