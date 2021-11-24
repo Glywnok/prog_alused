@@ -7,10 +7,21 @@ elif failinimi == "2":
 elif failinimi == "3":
     failinimi = ("edm.txt")
 elif failinimi == "4":
-    failinimi = ("eesti_muusika")
+    failinimi = ("eesti_muusika.txt")
 else:
     print("Sisestatud number ei nõusta proovi uuesti.")
+    exit()
 
 print(str(failinimi))
 
-open = (failinimi, encoding="UTF-8")
+fail = open(failinimi, encoding="UTF-8")
+
+muusika = []
+
+for rida in fail:
+    
+    muusika.append(str(rida.strip()))
+
+fail.close()
+
+print(muusika)
