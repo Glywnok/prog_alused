@@ -32,6 +32,6 @@ for i in range(len(inimesisisse)):
 print(vahe)
 
 if max(vahe) > 0:
-    print("Maksimaalne sisserändajate arv oli " + str(vahe.@@@@(max(vahe))) + ". aastal.")
+    print("Maksimaalne sisserändajate arv oli " + str(vahe.index(max(vahe))+1) + ". aastal.")
 else:
     print("Mitte ühel aastal polnud inimeste sisseränne ületannud inimese väljaränne")
