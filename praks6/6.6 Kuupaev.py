@@ -1,4 +1,5 @@
 def kuu_nimi(kuu_nr):
+    month = ''
     if kuu_nr == 1:
         month = "jaanuar"
     elif kuu_nr == 2:
@@ -25,11 +26,12 @@ def kuu_nimi(kuu_nr):
         month = "detsember"
     return month
 
-def kuupäev_sõnena(kuu_sõnena):
-    for date in kuupäev:
-        kuupäev.split('.')
-        day += [int(kuupäev[0])]
+def kuupäev_sõnena(päev_sõnena):
+    data = päev_sõnena.split('.')
+    text = data[0] + ". " + kuu_nimi(int(data[1])) + " " + data[2] + ". a."
+    return text
     
 
-kuupäev = float(input("Sisestage kuupäeva "))
+kuupäev = input("Sisestage kuupäeva: ")
 
+print(kuupäev_sõnena(kuupäev))
